@@ -52,9 +52,8 @@ Inclua:
 - Estatísticas descritivas (média, mediana, mínimo, máximo, desvio padrão, etc.)  
 - Gráficos relevantes:  
   - histogramas  
-  - boxplots  
-  - scatterplots  
-  - heatmap de correlação  
+  - boxplots
+  - etc 
 - Identificação e comentário sobre padrões encontrados  
 - Identificação de outliers quando relevante  
 
