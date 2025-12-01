@@ -1,152 +1,186 @@
-# 📌 Nome do Projeto
+# 📌 Projeto de Análise Estatística e Aplicação de Modelo de Machine Learning
 
-Descreva brevemente o seu projeto. Pode incluir imagens, diagramas ou links para wireframes, protótipos, vídeos ou mockups.
+Descreva brevemente o objetivo do seu projeto.  
+Explique qual problema o dataset escolhido permite investigar e qual modelo de aprendizado de máquina foi utilizado.
+
+Inclua imagens, figuras, gráficos exploratórios ou prints se desejar.
 
 ---
 
 ## 👥 Integrantes
 
-- Nome 1 - RA: XXXXXXXX
-- Nome 2 - RA: XXXXXXXX
-- Nome 3 - RA: XXXXXXXX
+- Nome 1 — RA: XXXXXXXX  
+- Nome 2 — RA: XXXXXXXX  
+- Nome 3 — RA: XXXXXXXX  
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🔗 Dataset Utilizado
 
-Liste as tecnologias, linguagens, frameworks e bibliotecas utilizadas no projeto.
+Informe os dados essenciais sobre o conjunto de dados escolhido.
 
-- [Golang](https://github.com/golang/go)
-- [Docker](https://www.docker.com/)
-- [MySQL](https://www.mysql.com/)
-- [React](https://reactjs.org/)
-- Outros...
-
----
-
-## 📦 Dependências e Versões
-
-- Docker - Versão: XX
-- Node.js - Versão: XX
-- MySQL - Versão: XX
-- Python - Versão: XX
+- **Nome do dataset:**  
+- **Link (Kaggle ou outra fonte):**  
+- **Descrição do dataset:** número de amostras, variáveis, tipo de problema, etc.  
+- **Variável-alvo (target):**  
+- **Justificativa da escolha:** por que este dataset é adequado para o modelo escolhido?  
 
 ---
 
-## ✅ Como Rodar o Projeto
+## 🧠 Modelo de Aprendizagem de Máquina
 
-1. Clone este repositório:
-```bash
-git clone https://github.com/seuusuario/repositorio.git
-cd repositorio
-```
+### Modelo escolhido:
+Exemplos:
+- Regressão Linear  
+- Regressão Logística  
+- KNN  
+- Árvore de Decisão  
+- Random Forest  
+- Naive Bayes  
 
-2. Execute o container Docker:
-```bash
-docker-compose up
-```
-
-3. Acesse em: [http://localhost:3000](http://localhost:3000)
-
-📷 Imagem esperada ao iniciar com sucesso:
-
-![screenshot](docs/screenshot.png)
+Explique:
+- O que o modelo faz  
+- Por que ele foi escolhido para este dataset  
+- Como ele funciona de maneira simples (explicação intuitiva)
 
 ---
 
-## 🧪 Como Rodar os Testes
+## 📊 Análise Exploratória dos Dados (EDA)
 
-```bash
-make test
-```
+Inclua:
 
-Ou
-
-```bash
-npm run test
-```
-
----
-
-## 🧭 Diário de Bordo
-
-### 📅 Reuniões Semanais
-
-| Data       | Participantes        | Principais Tópicos | Decisões Tomadas | Encaminhamentos |
-|------------|----------------------|--------------------|------------------|-----------------|
-| 05/08/2025 | Nome1, Nome2, Nome3  | Escolha do problema | Validado Canvas | Agendar entrevistas |
-
-### 📦 Entregas
-
-| Entrega       | Data       | Descrição                              | Status     | Link |
-|---------------|------------|----------------------------------------|------------|------|
-| Entrega 1     | 19/08/2025 | Lean Canvas + Justificativa do Problema | ✅ Entregue | [Ver](./docs/entrega1.pdf) |
-| Entrega 2     | 02/09/2025 | Mapa de Empatia + Prototipagem          | 🚧 Em andamento | - |
-
-### 🧩 Tarefas Pendentes
-
-- [ ] Finalizar fluxograma da solução
-- [ ] Criar modelo inicial do banco de dados
-- [ ] Preparar protótipo para entrevista com o professor
+- Estatísticas descritivas (média, mediana, mínimo, máximo, desvio padrão, etc.)  
+- Gráficos relevantes:  
+  - histogramas  
+  - boxplots  
+  - scatterplots  
+  - heatmap de correlação  
+- Identificação e comentário sobre padrões encontrados  
+- Identificação de outliers quando relevante  
 
 ---
 
-## 🛠️ Problemas Enfrentados
+## 🧪 Treinamento e Testes do Modelo
 
-### Problema 1: Conflito de Horários para Reunião
-- **Descrição:** Dois integrantes estavam indisponíveis nos horários definidos inicialmente.
-- **Solução:** Adotamos a plataforma When2Meet para reorganizar os horários com mais flexibilidade.
+Insira aqui o código ou prints do notebook.  
+O código **deve** estar acessível de uma das formas:
 
-### Problema 2: Dificuldade com Deploy no Docker
-- **Descrição:** A imagem do backend não inicializava corretamente.
-- **Solução:** Atualizamos o Dockerfile e criamos um `entrypoint.sh` com permissões ajustadas.
+- **Link para notebook no Google Colab (obrigatoriamente compartilhado como visualização):**  
+  `https://colab.research.google.com/...`
 
----
+ou
 
-## 🗣️ Feedbacks Recebidos
+- **Código Python dentro da pasta `/src/` do repositório**
 
-| Data       | De Quem     | Observação                                                                 | Ação Tomada                       |
-|------------|-------------|-----------------------------------------------------------------------------|----------------------------------|
-| 26/08/2025 | Professor X | Melhorar justificativa do problema, estava genérica                        | Redefinimos o problema com base em dados reais coletados |
-| 10/09/2025 | Colega Y    | Interface não estava intuitiva em telas menores                            | Responsividade ajustada com Flexbox e Media Queries |
-
----
-
-## 🚀 Funcionalidades do Projeto
-
-- [x] Tela de login
-- [x] Cadastro de usuário
-- [ ] Dashboard com métricas
-- [ ] Sistema de notificações
-- [ ] Exportação de dados em CSV
+### Passos obrigatórios no notebook:
+- Limpeza e preparação dos dados  
+- Tratamento de valores ausentes  
+- Codificação de variáveis categóricas (OneHotEncoder)  
+- Padronização quando necessário (StandardScaler)  
+- Separação treino/teste  
+- Treinamento do modelo  
+- Previsões  
+- Avaliação das métricas  
 
 ---
 
-## 📚 Lições Aprendidas
+## 📐 Métricas de Avaliação
 
-- Importância de planejamento incremental
-- Como validar hipóteses com usuários reais
-- Uso prático do Git em equipe
-- Comunicação eficiente em times multidisciplinares
+### **Para Classificação**
+- Accuracy  
+- Matriz de confusão  
+- Precision e Recall (explicação simples e intuitiva)
+
+---
+
+### **Para Regressão**
+
+#### **1. MAE (Mean Absolute Error)**  
+Erro Absoluto Médio.  
+Mostra, em média, **quanto o modelo erra em valor absoluto**.  
+É fácil de interpretar.  
+Quanto menor o MAE, melhor.
+
+#### **2. RMSE (Root Mean Squared Error)**  
+Raiz do Erro Quadrático Médio.  
+Penaliza erros maiores de forma mais forte.  
+Útil quando você quer evitar erros grandes.  
+Quanto menor, melhor.
+
+#### **3. R² (Coeficiente de Determinação)**  
+Mostra **quanta variação dos dados o modelo consegue explicar**.  
+
+Interpretação rápida:  
+- **R² = 1.0** -> o modelo explica 100% da variação  
+- **R² = 0.0** -> o modelo não explica nada  
+- **R² negativo** -> o modelo é pior que adivinhar pela média  
+
+---
+
+## 🧬 Experimentos Realizados
+
+Descreva pelo menos 3 experimentos feitos pelo grupo, por exemplo:
+
+- Alterar profundidade da Decision Tree  
+- Comparar K=3, K=5 e K=7 no KNN  
+- Comparar dados normalizados vs. não normalizados  
+- Remover ou adicionar variáveis  
+- Testar diferentes tamanhos de treino/teste  
+
+Inclua:
+
+- Código  
+- Gráficos ou tabelas  
+- Interpretação do que mudou e por que mudou  
+
+---
+
+## 📈 Resultados Obtidos
+
+Resumo das principais descobertas:
+
+- Como o modelo se saiu?  
+- Quais variáveis têm maior influência?  
+- Houve overfitting ou underfitting?  
+- O modelo faz sentido para esse dataset?  
+
+Inclua tabelas e gráficos relevantes.
+
+---
+
+## 🧩 Conclusões Finais
+
+- O que aprenderam sobre o modelo escolhido?  
+- O que descobriram sobre o dataset?  
+- O que poderia ser feito para melhorar o modelo?  
+- O modelo é adequado para esse tipo de dado?  
 
 ---
 
 ## 📁 Organização do Repositório
 
 ```
-📦 projeto/
- ┣ 📂 docs/
- ┃ ┣ entrega1.pdf
- ┃ ┗ wireframes.png
+📦 projeto-datascience/
  ┣ 📂 src/
- ┃ ┣ 📂 frontend/
- ┃ ┗ 📂 backend/
- ┣ docker-compose.yml
- ┗ README.md
+ ┃ ┗ model.ipynb           # notebook principal
+ ┣ 📂 docs/
+ ┃ ┗ imagens-graficos/
+ ┣ README.md               # este arquivo
 ```
+
+---
+
+## 📝 Entrega
+
+📅 **Data de entrega: 16/12/2025**  
+🧾 **Formato obrigatório:**  
+- PDF  
+- Notebook  
+- README preenchido  
+🎯 **Notebook deve estar acessível com permissão de visualização**
 
 ---
 
 ## 📝 Licença
 
-Este projeto é licenciado sob a Licença MIT. Veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
+Este projeto está licenciado sob MIT ou outro modelo escolhido pelo grupo.
